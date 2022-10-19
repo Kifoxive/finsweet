@@ -11,7 +11,7 @@ import {
 const App = () => (
   <React.Suspense fallback={<div>Loading...</div>}>
     <div className="flex flex-col justify-between w-full min-h-[100vh]">
-      <div className={`${styles.boxWidth} sticky inset-x-0 top-0`}>
+      <div className={`${styles.boxWidth} sticky inset-x-0 top-0 z-50`}>
         <Navbar />
       </div>
 

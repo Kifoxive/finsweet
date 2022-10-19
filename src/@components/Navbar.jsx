@@ -40,7 +40,7 @@ const Navbar = () => {
          <div className={`sm:flex flex-row items-center hidden`}>
             <ul className='flex flex-row'>
                {navLinks.map((link) => (
-                  <li className={`${styles.body1} ${link.id === "privacy_policy" && "hidden"} mr-[24px] text-white`} key={link.id}><Link to={link.path}>{link.title}</Link>
+                  <li className={`${styles.body1} ${link.id === "privacy_policy" && "hidden"} mr-[24px] text-[#fff] hover:text-yellow`} key={link.id}><Link to={link.path}>{link.title}</Link>
                   </li>
                ))}
             </ul>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <div className={`sm:flex flex-row`}>
                <ul className='flex flex-col'>
                   {navLinks.map((link, index) => (
-                     <li className={`${index !== navLinks.length - 1 ? 'mb-0' : 'mb-2'} ${link.id === "privacy_policy" && "hidden"} mt-2 ${styles.body1} text-white`} key={link.id}><Link to={link.path}>{link.title}</Link>
+                     <li className={`${link.id === "privacy_policy" && "hidden"} mb-2 mt-2 ${styles.body1} text-[#fff] hover:text-yellow`} key={link.id}><Link to={link.path}>{link.title}</Link>
                      </li>
                   ))}
                </ul>

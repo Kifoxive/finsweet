@@ -12,7 +12,7 @@ import Join from './Join'
 
 const Home = () => {
    return (
-      <>
+      <div className=''>
          <Hero />
          <Featured />
          <AboutUs />
@@ -22,7 +22,7 @@ const Home = () => {
          <Logos />
          <Testimonials />
          <Join />
-      </>
+      </div>
    )
 }
 

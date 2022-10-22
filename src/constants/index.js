@@ -16,6 +16,10 @@ import {
   logo_3,
   logo_4,
   logo_5,
+  two_woman,
+  people_handshake,
+  people_walking,
+  woman_looking,
 } from "../assets"
 
 export const navLinks = [
@@ -213,4 +217,80 @@ export const logos = [
   { id: 3, icon: logo_3 },
   { id: 4, icon: logo_4 },
   { id: 5, icon: logo_5 },
+]
+
+export const blogsCards = [
+  {
+    id: 1,
+    category: "Startup",
+    title: "Design tips for designers that cover everything you need",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: two_woman,
+  },
+  {
+    id: 2,
+    category: "BUSINESS",
+    title: "How to build rapport with your web design clients",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: people_handshake,
+  },
+  {
+    id: 3,
+    category: "Startup",
+    title: "Logo design trends to avoid in 2022",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: woman_looking,
+  },
+  {
+    id: 4,
+    category: "TECHNOLOGY",
+    title: "8 Figma design systems you can download for free today",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: people_walking,
+  },
+  {
+    id: 5,
+    category: "ECONOMY",
+    title: "Font sizes in UI design: The complete guide to follow",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: two_woman,
+  },
+]
+
+export const blogText = {
+  title:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
+  list: [
+    { id: 1, text: "Lorem ipsum dolor sit amet" },
+    { id: 2, text: "Non blandit massa enim nec scelerisque" },
+    { id: 3, text: "Neque egestas congue quisque egestas" },
+  ],
+}
+
+export const whatToRead = [
+  {
+    id: 1,
+    author: "John Doe",
+    date: "Aug 23, 2021",
+    title: "A UX Case Study Creating a Studious Environment for Students: ",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: two_woman,
+  },
+  {
+    id: 2,
+    author: "John Doe",
+    date: "Aug 23, 2021",
+    title: "A UX Case Study Creating a Studious Environment for Students: ",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: people_handshake,
+  },
+  {
+    id: 3,
+    author: "John Doe",
+    date: "Aug 23, 2021",
+    title: "A UX Case Study Creating a Studious Environment for Students: ",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    photo: woman_looking,
+  },
 ]

@@ -30,8 +30,8 @@ const Footer = () => {
          <div className='flex flex-row items-center h-[140px]'>
             <div className='flex flex-col md:flex-row w-full justify-between'>
                <div className='flex flex-col'>
-                  <p className={`${styles.body1} text-medium-gray`}>Finstreet 118 2561 Fintown</p>
-                  <p className={`${styles.body1} text-medium-gray`}>Hello@finsweet.com  020 7993 2905</p>
+                  <p className={`${styles.body1}`}>Finstreet 118 2561 Fintown</p>
+                  <p className={`${styles.body1}`}>Hello@finsweet.com  020 7993 2905</p>
                </div>
                <ul className='flex flex-row md:mt-0 mt-5'>{socialMedia.map((social, index) => (
                   <li key={social.id} className={`${index !== socialMedia.length - 1 ? 'mr-5' : 'mr-0'}`}><a href={social.link}><img src={social.icon} alt={social.id} /></a></li>

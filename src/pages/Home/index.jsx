@@ -8,11 +8,11 @@ import SpecialPost from './SpecialPost'
 import Authors from './Authors'
 import Logos from './Logos'
 import Testimonials from './Testimonials'
-import Join from './Join'
+import Join from '../../@components/Join'
 
 const Home = () => {
    return (
-      <div className=''>
+      <>
          <Hero />
          <Featured />
          <AboutUs />
@@ -22,7 +22,7 @@ const Home = () => {
          <Logos />
          <Testimonials />
          <Join />
-      </div>
+      </>
    )
 }
 

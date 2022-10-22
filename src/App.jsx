@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./style"
 
 import { Routes, Route } from "react-router-dom"
-import { Home } from './pages'
+import { Home, Blog, BlogPost } from './pages'
 import {
   Navbar,
   Footer
@@ -18,6 +18,8 @@ const App = () => (
       <div className={`${styles.boxWidth} flex-1`}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog-post" element={<BlogPost />} />
         </Routes>
       </div>
 

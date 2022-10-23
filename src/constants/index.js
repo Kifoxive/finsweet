@@ -20,6 +20,10 @@ import {
   people_handshake,
   people_walking,
   woman_looking,
+  man_in_eyeglasses,
+  woman_hairstyle,
+  man_flower,
+  cheerful_man,
 } from "../assets"
 
 export const navLinks = [
@@ -209,6 +213,118 @@ export const authors = [
       },
     ],
   },
+  {
+    id: 5,
+    icon: man_in_eyeglasses,
+    name: "Guy Hawkins",
+    job: "Content Writer @Company",
+    socialMedia: [
+      {
+        id: "social-media-2",
+        icon: facebook,
+        link: "https://www.facebook.com/",
+      },
+      {
+        id: "social-media-3",
+        icon: twitter,
+        link: "https://www.twitter.com/",
+      },
+      {
+        id: "social-media-1",
+        icon: instagram,
+        link: "https://www.instagram.com/",
+      },
+      {
+        id: "social-media-4",
+        icon: linkedin,
+        link: "https://www.linkedin.com/",
+      },
+    ],
+  },
+  {
+    id: 6,
+    icon: woman_hairstyle,
+    name: "Eleanor Pena",
+    job: "Content Writer @Company",
+    socialMedia: [
+      {
+        id: "social-media-2",
+        icon: facebook,
+        link: "https://www.facebook.com/",
+      },
+      {
+        id: "social-media-3",
+        icon: twitter,
+        link: "https://www.twitter.com/",
+      },
+      {
+        id: "social-media-1",
+        icon: instagram,
+        link: "https://www.instagram.com/",
+      },
+      {
+        id: "social-media-4",
+        icon: linkedin,
+        link: "https://www.linkedin.com/",
+      },
+    ],
+  },
+  {
+    id: 7,
+    icon: man_flower,
+    name: "Robert Fox",
+    job: "Content Writer @Company",
+    socialMedia: [
+      {
+        id: "social-media-2",
+        icon: facebook,
+        link: "https://www.facebook.com/",
+      },
+      {
+        id: "social-media-3",
+        icon: twitter,
+        link: "https://www.twitter.com/",
+      },
+      {
+        id: "social-media-1",
+        icon: instagram,
+        link: "https://www.instagram.com/",
+      },
+      {
+        id: "social-media-4",
+        icon: linkedin,
+        link: "https://www.linkedin.com/",
+      },
+    ],
+  },
+  {
+    id: 8,
+    icon: cheerful_man,
+    name: "Jacob Jones",
+    job: "Content Writer @Company",
+    socialMedia: [
+      {
+        id: "social-media-2",
+        icon: facebook,
+        link: "https://www.facebook.com/",
+      },
+      {
+        id: "social-media-3",
+        icon: twitter,
+        link: "https://www.twitter.com/",
+      },
+      {
+        id: "social-media-1",
+        icon: instagram,
+        link: "https://www.instagram.com/",
+      },
+      {
+        id: "social-media-4",
+        icon: linkedin,
+        link: "https://www.linkedin.com/",
+      },
+    ],
+  },
 ]
 
 export const logos = [
@@ -293,4 +409,10 @@ export const whatToRead = [
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
     photo: woman_looking,
   },
+]
+
+export const statistic = [
+  { id: 1, amount: "12+", text: "Blogs Published" },
+  { id: 2, amount: "18K+", text: "Views on Finsweet" },
+  { id: 3, amount: "30K+", text: "Total active Users" },
 ]

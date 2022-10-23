@@ -4,8 +4,8 @@ import styles from '../../style'
 import { profile_pic, prev_button, next_button } from '../../assets'
 
 const Testimonials = () => (
-   <section className={`${styles.paddingX} ${styles.paddingY}`}>
-      <div className={`flex flex-col md:flex-row justify-between py-[20px] sm:py-[80px] px-[20px] sm:px-[100px] bg-light-yellow`}>
+   <section className={`sm:px-16 px-0 ${styles.paddingY}`}>
+      <div className={`sm:px-20 px-6 flex flex-col md:flex-row justify-between py-[20px] sm:py-[80px]  bg-light-yellow`}>
          <div className='flex flex-col justify-between h-[200px] w-[200px] sm:w-[350px] mr-0 md:mr-20 md:mb-0 mb-[220px] sm:mb-[100px] '>
             <p className={`${styles.cap1} mb-5`}>TESTIMONIALS</p>
             <h2 className={`${styles.heading2} mb-5`}>What people say <br /> about our blog</h2>
@@ -23,7 +23,7 @@ const Testimonials = () => (
                </div>
                <div className='flex flex-row items-center p-[20px]'>
                   <img className='h-[48px] w-[48px] mr-[15px]' src={prev_button} alt="prev button" />
-                  <img className='h-[62px] w-[62px]' src={next_button} alt="next button" />
+                  <img className='h-[62px] w-[62px] pt-[5px]' src={next_button} alt="next button" />
                </div>
             </div>
          </div>

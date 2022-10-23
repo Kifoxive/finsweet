@@ -23,7 +23,7 @@ const Blogs = () => {
    return (
       <section className={`${styles.paddingX} ${styles.paddingY}`}>
          <div className='border-b-[1px] border-[medium-gray] p-8'>
-            <h2 className={`${styles.heading1}`}>All posts</h2>
+            <h1 className={`${styles.heading1}`}>All posts</h1>
          </div>
          <ul className='flex flex-col gap-[30px] md:gap-[64px] my-[66px]'>
             {blogsCards.map((blog) => <Blog key={blog.id} {...blog} />)}

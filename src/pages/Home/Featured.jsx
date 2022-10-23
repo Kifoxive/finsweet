@@ -20,7 +20,7 @@ const Featured = () => {
    }
 
    return (
-      <section className={`${styles.paddingX} ${styles.paddingY} flex flex-col md:flex-row justify-between w-full`}>
+      <section className={`${styles.paddingX} ${styles.paddingY} flex flex-col md:flex-row justify-between w-full mt-[40px]`}>
          <div className='flex flex-col flex-2 mr-0 md:mr-8'>
             <h2 className={`${styles.heading2} text-black mb-6`}>Featured Post</h2>
             <div className='flex flex-col items-start p-8 border-[1px] border-[medium-gray]'>
@@ -32,7 +32,7 @@ const Featured = () => {
             </div>
          </div>
          <div className='flex flex-col flex-1 mt-10 md:mt-0'>
-            <div className='flex flex-row justify-between items-center mb-6'>
+            <div className='flex flex-row justify-between items-center'>
                <h2 className={`${styles.heading2} text-black`}>All Posts</h2>
                <p className={`${styles.body1} text-purple min-w-[100px] text-end`}><Link to="/blog">View All</Link></p>
             </div>

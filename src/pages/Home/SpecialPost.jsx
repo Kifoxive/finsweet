@@ -5,8 +5,8 @@ import { peoples } from '../../assets'
 import { Button } from '../../@components'
 
 const SpecialPost = () => (
-   <section className={`${styles.paddingX} ${styles.paddingY} overflow-hidden mt-10`}>
-      <div style={{ 'backgroundImage': `url(${peoples})` }} className='flex justify-end items-end pt-0 md:pt-[120px] bg-center bg-no-repeat'>
+   <section className={`${styles.paddingY} sm:px-16 px-0 overflow-hidden mt-10`}>
+      <div style={{ 'backgroundImage': `url(${peoples})` }} className={`flex justify-end items-end pt-0 md:pt-[120px] bg-start bg-no-repeat`}>
          <div className={`${styles.paddingX} ${styles.paddingY} flex flex-col items-start max-w-[700px] z-10 bg-[#ffffffcc] md:bg-white`}>
             <p className={`${styles.cap1} mb-5`}>Why we started</p>
             <h2 className={`${styles.heading2} mb-3`}>It started out as a simple idea and evolved into our passion</h2>

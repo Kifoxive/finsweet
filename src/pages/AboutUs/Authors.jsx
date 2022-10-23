@@ -10,10 +10,9 @@ const Authors = () => (
          <h2 className={`${styles.heading2} text-center`}>List of Authors</h2>
       </div>
       <ul className='flex flex-wrap flex-row justify-center md:justify-between gap-[32px]'>{
-         authors.slice(0, 4).map((elem) => <AuthorCard key={elem.id} {...elem} />)}
+         authors.map((elem) => <AuthorCard key={elem.id} {...elem} />)}
       </ul>
    </section>
 )
-
 
 export default Authors

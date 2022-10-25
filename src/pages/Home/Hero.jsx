@@ -5,7 +5,7 @@ import { overlay, man_in_black } from "../../assets"
 import { Button } from '../../@components'
 
 const Hero = () => (
-   <section className={`relative flex items-center w-full min-h-[100vh]`}>
+   <header className={`relative flex items-center w-full min-h-[100vh]`}>
       <div style={{ 'backgroundImage': `url(${overlay})` }} className={`absolute h-[100%] w-[100%] z-20 bg-no-repeat bg-cover bg-center`} />
       <div style={{ 'backgroundImage': `url(${man_in_black})` }} className={`absolute h-[100%] w-[100%] bg-no-repeat bg-cover bg-center`} />
       <div className={``}></div>
@@ -16,7 +16,7 @@ const Hero = () => (
          <p className={`${styles.body1} mb-5 font-bold  text-white`}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br /> fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
          <Button text="Read More >" path="/blog-post" />
       </div>
-   </section>
+   </header>
 )
 
 

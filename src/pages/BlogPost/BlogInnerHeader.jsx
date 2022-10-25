@@ -4,7 +4,7 @@ import styles from '../../style'
 import { profile_pic, rocket, woman_eyeglasses, two_woman, people_handshake, woman_looking } from '../../assets'
 
 const BlogInnerHeader = () => (
-   <section className={`${styles.flexCenter} ${styles.paddingX} ${styles.paddingY} flex flex-col`}>
+   <header className={`${styles.flexCenter} ${styles.paddingX} ${styles.paddingY} flex flex-col`}>
       <div className='flex-col justify-start'>
          <div className='flex flex-row'>
             <img className='h-[48px] w-[48px] mr-[15px]' src={profile_pic} alt="profile pic" />
@@ -22,7 +22,7 @@ const BlogInnerHeader = () => (
          </div>
       </div>
       <img className='mt-[64px]' src={woman_eyeglasses} alt="woman and team" />
-   </section>
+   </header>
 )
 
 

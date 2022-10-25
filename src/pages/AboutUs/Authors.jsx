@@ -9,7 +9,7 @@ const Authors = () => (
       <div className='py-[48px]'>
          <h2 className={`${styles.heading2} text-center`}>List of Authors</h2>
       </div>
-      <ul className='flex flex-wrap flex-row justify-center md:justify-between gap-[32px]'>{
+      <ul className='flex flex-wrap flex-row justify-center md:justify-between gap-8'>{
          authors.map((elem) => <AuthorCard key={elem.id} {...elem} />)}
       </ul>
    </section>

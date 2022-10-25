@@ -5,7 +5,7 @@ import { man_in_white } from '../../assets'
 import Button from '../../@components/Button';
 
 const BlogHeader = () => (
-   <section className={`${styles.paddingX} ${styles.paddingY} flex flex-col md:flex-row justify-between items-start md:items-center bg-lavender`}>
+   <header className={`${styles.paddingX} ${styles.paddingY} flex flex-col md:flex-row justify-between items-start md:items-center bg-lavender`}>
       <div className='flex flex-col flex-2 mr-0 md:mr-8 mb-10 md:mb-0'>
          <p className={`${styles.cap1} mb-5`}>Featured Post</p>
          <div className='flex flex-col items-start'>
@@ -18,7 +18,7 @@ const BlogHeader = () => (
       <div className='flex flex-1 justify-end min-w-[100px] md:min-w-[450px]'>
          <img src={man_in_white} alt="man in white" />
       </div>
-   </section>
+   </header>
 )
 
 

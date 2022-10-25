@@ -24,6 +24,7 @@ import {
   woman_hairstyle,
   man_flower,
   cheerful_man,
+  man_in_white,
 } from "../assets"
 
 export const navLinks = [
@@ -73,30 +74,34 @@ export const socialMedia = [
   },
 ]
 
-export const catagories = [
+export const categories = [
   {
     id: 1,
     icon: buildings,
     title: "Business",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    path: "business",
   },
   {
     id: 2,
     icon: rocket,
     title: "Startup",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    path: "startup",
   },
   {
     id: 3,
     icon: stonks,
     title: "Economy",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    path: "economy",
   },
   {
     id: 4,
     icon: robot,
     title: "Technology",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    path: "technology",
   },
 ]
 
@@ -335,38 +340,38 @@ export const logos = [
   { id: 5, icon: logo_5 },
 ]
 
-export const blogsCards = [
+export const selectedBlogs = [
   {
     id: 1,
-    category: "Startup",
+    category: "startup",
     title: "Design tips for designers that cover everything you need",
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
     photo: two_woman,
   },
   {
     id: 2,
-    category: "BUSINESS",
+    category: "business",
     title: "How to build rapport with your web design clients",
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
     photo: people_handshake,
   },
   {
     id: 3,
-    category: "Startup",
+    category: "startup",
     title: "Logo design trends to avoid in 2022",
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
     photo: woman_looking,
   },
   {
     id: 4,
-    category: "TECHNOLOGY",
+    category: "technology",
     title: "8 Figma design systems you can download for free today",
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
     photo: people_walking,
   },
   {
     id: 5,
-    category: "ECONOMY",
+    category: "economy",
     title: "Font sizes in UI design: The complete guide to follow",
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
     photo: two_woman,
@@ -415,4 +420,136 @@ export const statistic = [
   { id: 1, amount: "12+", text: "Blogs Published" },
   { id: 2, amount: "18K+", text: "Views on Finsweet" },
   { id: 3, amount: "30K+", text: "Total active Users" },
+]
+
+export const blogs = {
+  startup: [
+    {
+      id: 1,
+      category: "startup",
+      title: "Top 6 free website mockup tools 2022",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: woman_looking,
+    },
+    {
+      id: 2,
+      category: "startup",
+      title: "Step-by-step guide to choosing great font pairs",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: woman_looking,
+    },
+    {
+      id: 3,
+      category: "startup",
+      title: "Ten free foogle fonts that you should use",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: woman_looking,
+    },
+    {
+      id: 4,
+      category: "startup",
+      title: "What did I learn from doing 50+ design sprints?",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: woman_looking,
+    },
+  ],
+  business: [
+    {
+      id: 1,
+      category: "business",
+      title: "Top 6 free website mockup tools 2022",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: two_woman,
+    },
+    {
+      id: 2,
+      category: "business",
+      title: "Step-by-step guide to choosing great font pairs",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: two_woman,
+    },
+    {
+      id: 3,
+      category: "business",
+      title: "Ten free foogle fonts that you should use",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: two_woman,
+    },
+    {
+      id: 4,
+      category: "business",
+      title: "What did I learn from doing 50+ design sprints?",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: two_woman,
+    },
+  ],
+  economy: [
+    {
+      id: 1,
+      category: "economy",
+      title: "Top 6 free website mockup tools 2022",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: people_handshake,
+    },
+    {
+      id: 2,
+      category: "economy",
+      title: "Step-by-step guide to choosing great font pairs",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: people_handshake,
+    },
+    {
+      id: 3,
+      category: "economy",
+      title: "Ten free foogle fonts that you should use",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: people_handshake,
+    },
+    {
+      id: 4,
+      category: "economy",
+      title: "What did I learn from doing 50+ design sprints?",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: people_handshake,
+    },
+  ],
+  technology: [
+    {
+      id: 1,
+      category: "technology",
+      title: "Top 6 free website mockup tools 2022",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: man_in_white,
+    },
+    {
+      id: 2,
+      category: "technology",
+      title: "Step-by-step guide to choosing great font pairs",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: man_in_white,
+    },
+    {
+      id: 3,
+      category: "technology",
+      title: "Ten free foogle fonts that you should use",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: man_in_white,
+    },
+    {
+      id: 4,
+      category: "technology",
+      title: "What did I learn from doing 50+ design sprints?",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
+      photo: man_in_white,
+    },
+  ],
+}
+
+export const tags = [
+  { id: 1, text: "Business" },
+  { id: 2, text: "Experience" },
+  { id: 3, text: "Screen" },
+  { id: 4, text: "Technology" },
+  { id: 5, text: "Marketing" },
+  { id: 6, text: "Life" },
 ]

@@ -19,7 +19,7 @@ const OtherPosts = () => {
             <div className='py-[20px] md:py-[64px]'>
                <h2 className={`${styles.heading2}`}>What to read next</h2>
             </div>
-            <div className='flex flex-col md:flex-row justify-between gap-[32px]'>
+            <div className='flex flex-col md:flex-row justify-between gap-8'>
                {whatToRead.map((post) => <Post key={post.id} {...post} />)}
             </div>
          </div>

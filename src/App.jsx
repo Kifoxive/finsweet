@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./style"
 
 import { Routes, Route } from "react-router-dom"
-import { Home, Blog, BlogPost, AboutUs, Category } from './pages'
+import { Home, Blog, BlogPost, AboutUs, Category, Author, Contact, Privacy, NoPage } from './pages'
 import {
   Navbar,
   Footer
@@ -22,6 +22,10 @@ const App = () => (
           <Route path="/blog-post" element={<BlogPost />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/category/:selectedCategory" element={<Category />} />
+          <Route path="/author" element={<Author />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
       </div>
 

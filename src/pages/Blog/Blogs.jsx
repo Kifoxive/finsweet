@@ -11,9 +11,9 @@ const Blogs = () => {
          <div className='border-b-[1px] border-[medium-gray] p-8'>
             <h1 className={`${styles.heading1}`}>All posts</h1>
          </div>
-         <ul className='flex flex-col gap-[30px] md:gap-16 my-[64px]'>
-            {selectedBlogs.map((blog) => <PostItem key={blog.id} {...blog} />)}
-         </ul>
+         <ul className='flex flex-col gap-[30px] md:gap-16 my-[64px]'>{
+            selectedBlogs.map((blog) => <PostItem key={blog.id} {...blog} />)
+         }</ul>
          <div className='flex justify-center'>
             <div className='flex flex-row justify-between items-baseline'>
                <button className={`${dirIsRight ? `${styles.heading4} text-medium-gray` : styles.heading3} w-[100px]`} onClick={() => setDirIsRight(false)}>{'<'} Prev</button>

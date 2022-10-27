@@ -1,46 +1,51 @@
 import React from 'react'
 import styles from '../../style'
 
-import { Link, useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import { PostItem } from '../../@components';
-import { blogs, categories, tags } from '../../constants';
+import { posts, categories, tags, categoriesNames } from '../../constants'
+import { TagsCouple, CategoryButton } from './categoryComponents'
 
-const Tag = ({ text }) => (
-   <li className='text-center hover:opacity-80 cursor-pointer'>
-      <p className='py-2 px-6 rounded-[28px] border-[2px] border-medium-gray font-sen font-bold text-medium-gray'>{text}</p>
-   </li>
-)
+function getTagsCouples(tags) {
+   const tagsCouple = []
 
-const CategoryButton = ({ icon, title, path }) => (
-   <li className='max-w-[300px] border-[1px] border-[medium-gray]'>
-      <Link className='display-block flex flex-row items-center p-6 hover:bg-yellow' to={`/category/${path}`}>
-         <div className={`${styles.flexCenter} min-h-[48px] min-w-[48px] bg-light-yellow rounded-lg`}>
-            <img src={icon} alt={title} />
-         </div>
-         <h3 className={`${styles.heading3} ml-4`}>{title}</h3>
-      </Link>
-   </li>
-)
+   for (let i = 0; i < tags.length; i += 2) {
+      const couple = []
+      couple.push(tags[i])
+      if (tags[i + 1] !== undefined) {
+         couple.push(tags[i + 1])
+      }
+      tagsCouple.push(couple)
+   }
+
+   return tagsCouple
+}
 
 const Sections = () => {
    const { selectedCategory = 'startup' } = useParams()
+   const tagsCouple = getTagsCouples(tags)
+
+
+   if (!categoriesNames.includes(selectedCategory)) {
+      return <Navigate to="/NoPage" />
+   }
 
    return (
       <section className={`${styles.paddingX} sm:py-32 py-16 flex flex-col md:flex-row justify-between`}>
-         <div className='flex flex-col gap-8'>
-            {blogs[selectedCategory].map((blog) => <PostItem key={blog.id} {...blog} imgSize="small" />)}
-         </div>
+         <ul className='flex flex-col gap-8'>
+            {posts[selectedCategory].map((blog) => <PostItem key={blog.id} {...blog} imgSize="small" />)}
+         </ul>
          <div className='flex flex-col ml-0 md:ml-[100px] max-w-[300px]'>
             <div className='flex flex-col mb-12'>
                <h2 className={`${styles.heading2} mb-10`}>Categories</h2>
                <ul className='flex flex-col gap-6'>{
-                  categories.map((elem) => <CategoryButton key={elem.id} {...elem} />)
+                  categories.map((elem) => <CategoryButton key={elem.id} {...elem} isSelected={selectedCategory === elem.path} />)
                }</ul>
             </div>
             <div className='flex flex-col'>
                <h2 className={`${styles.heading2} mb-6`}>All Tags</h2>
-               <ul className='flex flex-row flex-wrap gap-4'>{
-                  tags.map((tag) => <Tag key={tag.id} {...tag} />)
+               <ul className='flex flex-col gap-4'>{
+                  tagsCouple.map((couple, index) => <TagsCouple key={index} couple={couple} />)
                }</ul>
             </div>
          </div>

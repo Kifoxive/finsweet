@@ -25,6 +25,8 @@ import {
   man_flower,
   cheerful_man,
   man_in_white,
+  high_buiding,
+  crew,
 } from "../assets"
 
 export const navLinks = [
@@ -104,6 +106,8 @@ export const categories = [
     path: "technology",
   },
 ]
+
+export const categoriesNames = ["startup", "business", "economy", "technology"]
 
 export const authors = [
   {
@@ -422,7 +426,7 @@ export const statistic = [
   { id: 3, amount: "30K+", text: "Total active Users" },
 ]
 
-export const blogs = {
+export const posts = {
   startup: [
     {
       id: 1,
@@ -553,3 +557,37 @@ export const tags = [
   { id: 5, text: "Marketing" },
   { id: 6, text: "Life" },
 ]
+
+export const myPosts = [
+  {
+    id: 1,
+    category: "business",
+    title: "Font sizes in UI design: The complete guide to follow",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    photo: high_buiding,
+  },
+  {
+    id: 2,
+    category: "business",
+    title: "How to build rapport with your web design clients",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    photo: crew,
+  },
+]
+
+export const purposesOptions = [
+  { value: "related", text: "Query Related" },
+  { value: "impression", text: "First impression" },
+  { value: "vacancy", text: "Vacancy" },
+  { value: "offers", text: "Offers" },
+]
+
+export const privacyPolicy = {
+  title1: "Lorem ipsum dolor sit amet",
+  title2:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  text1:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.",
+  text2:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.",
+}

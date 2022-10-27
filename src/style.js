@@ -4,7 +4,7 @@ const styles = {
   display:
     "font-sen font-bold text-[40px] xs:text-[56px] text-black leading-[44px] xs:leading-[64px] w-full",
   heading1:
-    "font-sen font-bold text-[42px] xs:text-[48px] text-black leading-[58px] xs:leading-[64px] w-full",
+    "font-sen font-bold text-[42px] xs:text-[48px] text-black leading-[44px] xs:leading-[64px] w-full",
   heading2:
     "font-sen font-bold text-[30px] xs:text-[36px] text-black leading-[34px] xs:leading-[48px] w-full",
   heading3:
@@ -16,8 +16,8 @@ const styles = {
   body2: "font-inter font-normal text-[14px] text-medium-gray leading-[20px]",
   label: "font-inter font-mdeium text-[14px] text-black leading-[20px]",
   cap1: "font-inter uppercase tracking-widest font-semibold text-[16px] text-black leading-[20px]",
-  cap2: "font-inter font-normal text-[12px] text-black leading-[16px]",
-  cap3: "font-inter font-black text-[16px] text-black leading-[20px]",
+  cap2: "font-inter uppercase font-normal text-[12px] text-black leading-[16px]",
+  cap3: "font-inter uppercase font-black text-[16px] text-black leading-[20px]",
   cap4: "font-inter uppercase tracking-widest font-normal text-[16px] text-black leading-[20px]",
 
   flexCenter: "flex justify-center items-center",

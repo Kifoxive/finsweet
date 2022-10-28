@@ -6,7 +6,7 @@ import Button from '../../@components/Button';
 import { Link } from 'react-router-dom';
 
 const Post = () => (
-   <div className={`p-[25px] flex flex-col hover:bg-light-yellow min-w-[300px] sm:min-w-[400px]`}>
+   <div className={`p-[25px] flex flex-col hover:bg-light-yellow min-w-[300px] sm:min-w-[400px] cursor-pointer`}>
       <p className={`${styles.label} mb-3 text-dark-gray`}>By <span className='text-purple'>John Doe</span> <span className='px-2'>|</span> May 23, 2022</p>
       <h4 className={`${styles.heading4}`}>8 Figma design systems that <br /> you can download for free <br /> today.</h4>
    </div>

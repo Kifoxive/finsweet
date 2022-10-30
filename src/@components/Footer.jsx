@@ -20,7 +20,7 @@ const Footer = () => {
          </div>
 
          <div className={`${styles.paddingX} py-[64px] flex flex-col md:flex-row wrap items-baseline justife-between bg-[#2f303f]`}>
-            <h2 className={`${styles.heading2} text-[#fff] mr-5 md:mb-0 mb-10`}>Subscribe to our news letter to get <br /> latest updates and news</h2>
+            <h2 className={`${styles.heading2} text-[#fff] mr-5 md:mb-0 mb-10`}>Subscribe to our news letter to get <br className="sm:block hidden" /> latest updates and news</h2>
             <div className={`flex flex-col xs:flex-row items-start`}>
                <input type="text" placeholder='Enter Your Email' className={`${styles.body1} max-w-[500px] sm:max-w-[320px] xs:max-w-[200px] flex-shrink-2 py-[14px] px-[25px] bg-transparent border-[1px] border-[#6D6E76] mb-5 xs:mb-0 mr-5 text-[#fff]`} />
                <Button text="Subscribe" />

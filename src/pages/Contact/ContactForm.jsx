@@ -18,7 +18,6 @@ const ContactForm = () => {
    return (
       <section className={`${styles.flexCenter}`}>
          <div className={`w-[768px] pt-4 pb-16 sm:pb-32 px-6 md:px-0`}>
-
             <Formik initialValues={initialValues} onSubmit={onSubmit}>{
                formik => (
                   <Form>

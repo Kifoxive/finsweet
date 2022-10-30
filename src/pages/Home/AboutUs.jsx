@@ -14,7 +14,7 @@ const AboutUs = () => (
          </div>
          <div className='flex flex-col items-start flex-1'>
             <p className={`${styles.cap1} mb-5`}>OUR MISION</p>
-            <h3 className={`${styles.heading3} mb-5`}>Creating valuable content for <br /> creatives all around the world</h3>
+            <h3 className={`${styles.heading3} mb-5`}>Creating valuable content for <br className="sm:block hidden" /> creatives all around the world</h3>
             <p className={`${styles.body1} mb-5`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
          </div>
       </div>

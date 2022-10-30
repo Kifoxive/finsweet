@@ -14,7 +14,7 @@ const BlogInnerHeader = () => (
             </div>
          </div>
          <div className='mt-[24px] mb-[34px]'>
-            <h1 className={`${styles.heading1}`}>Step-by-step guide to choosing <br /> great font pairs</h1>
+            <h1 className={`${styles.heading1}`}>Step-by-step guide to choosing <br className="sm:block hidden" /> great font pairs</h1>
          </div>
          <div className='flex flex-row'>
             <img src={rocket} alt="rocket" />

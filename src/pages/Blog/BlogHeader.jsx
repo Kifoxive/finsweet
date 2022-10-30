@@ -9,9 +9,9 @@ const BlogHeader = () => (
       <div className='flex flex-col flex-2 mr-0 md:mr-8 mb-10 md:mb-0'>
          <p className={`${styles.cap1} mb-5`}>Featured Post</p>
          <div className='flex flex-col items-start'>
-            <h3 className={`${styles.heading3} mb-4`}>Step-by-step guide to choosing great <br /> font pairs</h3>
+            <h3 className={`${styles.heading3} mb-4`}>Step-by-step guide to choosing great <br className="sm:block hidden" /> font pairs</h3>
             <p className={`${styles.label} mb-3 text-dark-gray`}>By <span className='text-purple'>John Doe</span> <span className='px-2'>|</span> May 23, 2022</p>
-            <p className={`${styles.body1} mb-6`}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat <br /> nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <p className={`${styles.body1} mb-6`}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat <br className="sm:block hidden" /> nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
             <Button text="Read More >" path="/blog-post" />
          </div>
       </div>

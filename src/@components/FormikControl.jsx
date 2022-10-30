@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../style'
 
-import { Field } from 'formik';
+import { Field, useFormikContext } from 'formik';
 import { arrow_down } from '../assets';
 
 function FormikControl(props) {
@@ -27,18 +27,39 @@ const Input = ({ name, ...rest }) => (
    </div>
 )
 
-const Select = ({ name, options, ...rest }) => (
-   <div className='relative my-4'>
-      <Field className={`${styles.body1} w-full px-5 py-7 border-[1px] border-[#6D6E76] text-[#000]`} as='select' id={name} name={name} {...rest} >{
-         options.map((purpose) => (
-            <option key={purpose.value} value={purpose.value}>{purpose.text}</option>
-         ))
-      }</Field>
-      <div className={`absolute right-[2px] top-[25%] h-[50%] w-[30px] sm:w-[60px] bg-white`} >
-         <img className='mt-[15px]' src={arrow_down} alt="select purpose" />
+const Select = ({ name, options, ...rest }) => {
+   const [selected, setSelected] = React.useState(options[0])
+   const [showOptions, setShowOptions] = React.useState(false)
+
+   const { values } = useFormikContext();
+
+   React.useEffect(() => {
+      values.purpose = selected
+   }, [selected]);
+
+   return (
+      <div className='my-4'>
+         <div className={`${styles.body1} relative w-full p-6 border-[1px] border-[#6D6E76] text-[#000] cursor-pointer`} onClick={() => setShowOptions((prev => !prev))}>
+            <p>{selected.text}</p>
+            {showOptions && <ul className='absolute top-[100%] left-[-1px] right-[-1px] bg-black shadow-2xl' >
+               {options.filter((purpose) => purpose.value !== selected.value).map((purpose, index) => (
+                  <SelectField name={name} purpose={purpose} setSelected={setSelected} options={options} index={index} key={purpose.value} {...rest} />
+               ))}
+            </ul>}
+            <div className='absolute right-[2px] top-[25%] h-[50%] w-[30px] sm:w-[60px] bg-white' >
+               <img className={`${setShowOptions === true ? 'rotate-180' : 'rotate-0'} mt-[15px]`} src={arrow_down} alt="select purpose" />
+            </div>
+         </div>
       </div>
-   </div>
-)
+   )
+}
+
+const SelectField = ({ name, purpose, setSelected, options, index, ...rest }) => {
+   return (
+      <Field {...rest}
+         as="li" id={name} name={name} className={`${index !== options.length - 2 ? 'border-b-0' : 'border-b-[1px]'} border-[1px] border-[#6D6E76] display-block px-6 py-3  bg-white hover:bg-gray-100`} onClick={() => setSelected(purpose)} value={purpose.value}>{purpose.text}</Field>
+   )
+}
 
 const Textarea = ({ name, ...rest }) => (
    <div className='my-4'>
@@ -52,4 +73,8 @@ const Button = ({ name, text, ...rest }) => (
    </div>
 )
 
+
 export default FormikControl
+
+
+

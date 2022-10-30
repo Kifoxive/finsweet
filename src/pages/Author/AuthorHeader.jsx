@@ -12,7 +12,7 @@ const AuthorHeader = () => (
             <h1 className={`${styles.heading1} mb-6 text-start hidden sm:block md:hidden`}>Hey there, I’m Andrew Jonhson <br /> and welcome to my Blog</h1>
          </div>
          <div className='flex flex-col px-6 md:px-0'>
-            <h1 className={`${styles.heading1} mb-6 text-center md:text-start sm:hidden xs:block md:block`}>Hey there, I’m Andrew Jonhson <br /> and welcome to my Blog</h1>
+            <h1 className={`${styles.heading1} mb-6 text-center md:text-start sm:hidden xs:block md:block`}>Hey there, I’m Andrew Jonhson, and welcome to my Blog</h1>
             <p className={`${styles.body1} mb-6`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
             <ul className='flex flex-row'>{
                socialMedia.map((social, index) => (

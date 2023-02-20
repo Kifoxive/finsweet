@@ -1,7 +1,7 @@
-import React from 'react'
-import styles from '../../style'
+import React from 'react';
+import styles from '../../style';
 
-import { white_concrete_building } from '../../assets'
+import { white_concrete_building } from '../../assets';
 import Button from '../../@components/Button';
 import { Link } from 'react-router-dom';
 
@@ -10,19 +10,19 @@ const Post = () => (
       <p className={`${styles.label} mb-3 text-dark-gray`}>By <span className='text-purple'>John Doe</span> <span className='px-2'>|</span> May 23, 2022</p>
       <h4 className={`${styles.heading4}`}>8 Figma design systems that <br className="sm:block hidden" /> you can download for free <br className="sm:block hidden" /> today.</h4>
    </div>
-)
+);
 
 const Featured = () => {
-   const posts = []
+   const posts = [];
 
    for (let i = 0; i < 4; i++) {
-      posts.push(<Post key={i} />)
+      posts.push(<Post key={i} />);
    }
 
    return (
       <section className={`${styles.paddingX} ${styles.paddingY} flex flex-col md:flex-row justify-between w-full mt-[40px]`}>
          <div className='flex flex-col flex-2 mr-0 md:mr-8'>
-            <h2 className={`${styles.heading2} text-black mb-6`}>Featured Post</h2>
+            <h2 className={`${styles.heading2} text-black mb-6 `}>Featured Post</h2>
             <div className='flex flex-col items-start p-8 border-[1px] border-[medium-gray]'>
                <img className='mb-6 w-full' src={white_concrete_building} alt="building" />
                <p className={`${styles.label} mb-3 text-dark-gray`}>By <span className='text-purple'>John Doe</span> <span className='px-2'>|</span> May 23, 2022</p>
@@ -41,7 +41,7 @@ const Featured = () => {
             </div>
          </div>
       </section>
-   )
-}
+   );
+};
 
-export default Featured
+export default Featured;

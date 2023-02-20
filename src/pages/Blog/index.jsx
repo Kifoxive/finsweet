@@ -1,11 +1,14 @@
-import React from "react"
+import React, { useEffect } from 'react';
 
-import BlogHeader from "./BlogHeader"
-import Blogs from "./Blogs"
-import Categories from "./Categories"
-import { Join } from '../../@components'
+import BlogHeader from "./BlogHeader";
+import Blogs from "./Blogs";
+import Categories from "./Categories";
+import { Join } from '../../@components';
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <BlogHeader />
@@ -13,7 +16,7 @@ const Blog = () => {
       <Categories />
       <Join />
     </>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

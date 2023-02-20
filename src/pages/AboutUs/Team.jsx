@@ -4,7 +4,7 @@ import styles from '../../style'
 import { growth_hands } from '../../assets'
 
 const Team = () => (
-   <section className={`${styles.paddingX} ${styles.paddingY} flex flex-col justify-between md:flex-row items-center`}>
+   <section className={`${styles.paddingX} ${styles.paddingY} flex flex-col justify-between md:flex-row items-center overflow-hidden`}>
       <div className='flex flex-col max-w-[520px] mb-[40px] md:mb-0'>
          <h2 className={`${styles.heading2} mb-4`}>Our team of creatives</h2>
          <h4 className={`${styles.heading4} mb-5`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>

@@ -17,10 +17,6 @@
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
 .bg-black {
   background-color: #232536;
 }

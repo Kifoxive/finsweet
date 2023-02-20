@@ -23,7 +23,7 @@ function FormikControl(props) {
 
 const Input = ({ name, ...rest }) => (
    <div className='my-4'>
-      <Field className={`${styles.body1} w-full p-6 border-[1px] border-[#6D6E76] text-[#000] placeholder-black`} as='input' id={name} name={name} {...rest} />
+      <Field className={`${styles.body1} w-full p-6 border-[1px] border-medium-gray text-[#000] placeholder-black`} as='input' id={name} name={name} {...rest} />
    </div>
 )
 
@@ -39,7 +39,7 @@ const Select = ({ name, options, ...rest }) => {
 
    return (
       <div className='my-4'>
-         <div className={`${styles.body1} relative w-full p-6 border-[1px] border-[#6D6E76] text-[#000] cursor-pointer`} onClick={() => setShowOptions((prev => !prev))}>
+         <div className={`${styles.body1} relative w-full p-6 border-[1px] border-medium-gray text-[#000] cursor-pointer`} onClick={() => setShowOptions((prev => !prev))}>
             <p>{selected.text}</p>
             {showOptions && <ul className='absolute top-[100%] left-[-1px] right-[-1px] bg-black shadow-2xl' >
                {options.filter((purpose) => purpose.value !== selected.value).map((purpose, index) => (
@@ -57,13 +57,13 @@ const Select = ({ name, options, ...rest }) => {
 const SelectField = ({ name, purpose, setSelected, options, index, ...rest }) => {
    return (
       <Field {...rest}
-         as="li" id={name} name={name} className={`${index !== options.length - 2 ? 'border-b-0' : 'border-b-[1px]'} border-[1px] border-[#6D6E76] display-block px-6 py-3  bg-white hover:bg-gray-100`} onClick={() => setSelected(purpose)} value={purpose.value}>{purpose.text}</Field>
+         as="li" id={name} name={name} className={`${index !== options.length - 2 ? 'border-b-0' : 'border-b-[1px]'} border-[1px] border-medium-gray display-block px-6 py-3  bg-white hover:bg-gray-100`} onClick={() => setSelected(purpose)} value={purpose.value}>{purpose.text}</Field>
    )
 }
 
 const Textarea = ({ name, ...rest }) => (
    <div className='my-4'>
-      <Field className={`${styles.body1} w-full p-6 border-[1px] border-[#6D6E76] text-[#000] placeholder-black resize-none`} as='textarea' id={name} name={name} {...rest} />
+      <Field className={`${styles.body1} w-full p-6 border-[1px] border-medium-gray text-[#000] placeholder-black resize-none`} as='textarea' id={name} name={name} {...rest} />
    </div>
 )
 
